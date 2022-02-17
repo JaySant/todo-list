@@ -1,13 +1,11 @@
-.completed{
+.completed {
   text-decoration: line-through solid black;
 }
 
-#color{
-background-color: rgb(128, 128, 128);
-
-  
+#color {
+  background-color: gray;
 }
 
 .toggle {
- background-color: white;
+  background-color: white;
 }
