@@ -26,12 +26,14 @@ lista.addEventListener('dblclick', (event) => {
   }
 });
 
+// Requisito 10
 function apagar() {
   const listaItemAdd = document.getElementById('lista-tarefas');
   listaItemAdd.innerHTML = '';
 }
 apagar();
 
+// Requisito 11
 function clean() {
   const listaComplet = document.querySelectorAll('.completed');
   for (let index = 0; index < listaComplet.length; index += 1) {
@@ -39,3 +41,20 @@ function clean() {
   }
 }
 clean();
+
+// function salvarList() {
+//   const listaCriada = document.getElementById('lista-tarefas').innerHTML
+//   localStorage.setItem('list', listaCriada)
+// }
+// salvarList()
+
+function cleanSelected() {
+  const listaSelect = document.querySelectorAll('#color');
+  for (let index = 0; index < listaSelect.length; index += 1) {
+    listaSelect[index].remove();
+  }
+}
+cleanSelected();
+
+
+
